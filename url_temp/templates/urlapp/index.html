@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "urlapp/base.html"%}
+  {% block body_block %}
+    <h1>Welcome to Index Page</h1>
+    <h3>This is an example of tempalate ineritance </h3>
+    <h1>{{text|cut:'Hello'}}</h1>
+    <h1>{{number|add:"299"}}</h1>
+      <a href="{% url 'url_app:other' %}">Other Page <br></a>
+  {% endblock %}
